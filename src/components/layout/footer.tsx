@@ -13,7 +13,6 @@ export default function Footer() {
   const navLinks = [
     { href: '/about', label: t.footer.about },
     { href: '/services', label: t.footer.services },
-    { href: '/portfolio', label: t.footer.portfolio },
     { href: '/blog', label: t.footer.blog },
     { href: '/contact', label: t.footer.contact },
   ];
@@ -43,13 +42,13 @@ export default function Footer() {
             <address className="mt-4 space-y-2 not-italic text-sm">
               <p>Miami, Florida, USA</p>
               <p>
-                <a href="mailto:contact@stertup.com" className="hover:text-primary transition-colors">
-                  contact@stertup.com
+                <a href="mailto:info@stertup.net" className="hover:text-primary transition-colors">
+                  info@stertup.net
                 </a>
               </p>
               <p>
-                <a href="tel:+1234567890" className="hover:text-primary transition-colors">
-                  +1 (234) 567-890
+                <a href="tel:+17863098161" className="hover:text-primary transition-colors">
+                  +1 (786) 309-8161
                 </a>
               </p>
             </address>

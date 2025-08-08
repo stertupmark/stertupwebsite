@@ -314,8 +314,8 @@ export const translations = {
             submit: "Send Message"
         },
         address: { title: "Our Office", value: "Miami, Florida, USA" },
-        email: { title: "Email Us", value: "contact@stertup.com" },
-        phone: { title: "Call Us", value: "+1 (234) 567-890" },
+        email: { title: "Email Us", value: "info@stertup.net" },
+        phone: { title: "Call Us", value: "+1 (786) 309-8161" },
         validation: {
             name: "Name must be at least 2 characters.",
             email: "Please enter a valid email address.",
@@ -533,8 +533,8 @@ export const translations = {
             submit: "Enviar Mensaje"
         },
         address: { title: "Nuestra Oficina", value: "Miami, Florida, USA" },
-        email: { title: "Envíenos un Correo", value: "contacto@stertup.com" },
-        phone: { title: "Llámenos", value: "+1 (234) 567-890" },
+        email: { title: "Envíenos un Correo", value: "info@stertup.net" },
+        phone: { title: "Llámenos", value: "+1 (786) 309-8161" },
         validation: {
             name: "El nombre debe tener al menos 2 caracteres.",
             email: "Por favor, ingrese una dirección de correo electrónico válida.",
