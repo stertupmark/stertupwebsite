@@ -12,7 +12,7 @@ export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2" aria-label="Stertup Consulting Home">
       <Image
-        src="/logo.png"
+ src="/stertuplogo.jpg"
         alt="Stertup Consulting LLC Logo"
         width={180}
         height={40}
