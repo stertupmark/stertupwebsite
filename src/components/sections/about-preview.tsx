@@ -16,7 +16,7 @@ export default function AboutPreview() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="rounded-lg overflow-hidden shadow-2xl">
             <Image
-              src="https://placehold.co/600x400.png"
+              src="/local-tech.jpeg"
               alt={t.imageAlt}
               width={600}
               height={400}

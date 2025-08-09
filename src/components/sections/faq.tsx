@@ -57,7 +57,7 @@ export default function Faq() {
     }
   };
 
-  const preDefinedQuestions = Object.keys(t.questions);
+  const preDefinedQuestions = Object.keys(t.questions) as (keyof typeof t.questions)[];
 
   return (
     <section id="faq" className="py-20 lg:py-32">

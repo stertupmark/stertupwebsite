@@ -22,8 +22,6 @@ export default function Header() {
 
   const navLinks = [
     { href: '/services', label: t.header.services },
-    { href: '/about', label: t.header.about },
-    { href: '/blog', label: t.header.blog },
   ];
 
   useEffect(() => {

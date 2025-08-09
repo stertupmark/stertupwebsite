@@ -11,10 +11,10 @@ export default function Footer() {
   const t = translations[language];
 
   const navLinks = [
-    { href: '/about', label: t.footer.about },
     { href: '/services', label: t.footer.services },
-    { href: '/blog', label: t.footer.blog },
     { href: '/contact', label: t.footer.contact },
+    { href: '/terms', label: 'Terms of Service' },
+    { href: '/privacy', label: 'Privacy Policy' },
   ];
 
   return (
@@ -42,8 +42,8 @@ export default function Footer() {
             <address className="mt-4 space-y-2 not-italic text-sm">
               <p>Miami, Florida, USA</p>
               <p>
-                <a href="mailto:info@stertup.net" className="hover:text-primary transition-colors">
-                  info@stertup.net
+                <a href="mailto:info@stertups.net" className="hover:text-primary transition-colors">
+                  info@stertups.net
                 </a>
               </p>
               <p>

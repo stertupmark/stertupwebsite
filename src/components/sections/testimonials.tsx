@@ -1,6 +1,5 @@
 "use client";
 
-import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
@@ -9,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { useLanguage } from '@/hooks/use-language';
 import { translations } from '@/lib/translations';
 
@@ -16,23 +16,23 @@ export default function Testimonials() {
   const { language } = useLanguage();
   const t = translations[language].testimonials;
 
-  const testimonialData = [
-    {
-      client: 'client1',
-      image: 'https://placehold.co/100x100.png',
-      aiHint: 'professional woman',
-    },
-    {
-      client: 'client2',
-      image: 'https://placehold.co/100x100.png',
-      aiHint: 'business man',
-    },
-    {
-      client: 'client3',
-      image: 'https://placehold.co/100x100.png',
-      aiHint: 'smiling person',
-    },
+  type Testimonial = {
+    client: keyof typeof t.items;
+  };
+
+  const testimonialData: Testimonial[] = [
+    { client: 'client1' },
+    { client: 'client2' },
+    { client: 'client3' },
   ];
+
+  const getInitials = (name: string) => {
+    const names = name.split(' ');
+    if (names.length > 1) {
+      return `${names[0][0]}${names[1][0]}`;
+    }
+    return names[0].substring(0, 2);
+  };
 
   return (
     <section id="testimonials" className="py-20 lg:py-32 bg-secondary">
@@ -54,15 +54,12 @@ export default function Testimonials() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="flex flex-col items-center text-center p-8">
-                      <Image
-                        src={testimonial.image}
-                        alt={t.items[testimonial.client].name}
-                        width={80}
-                        height={80}
-                        className="rounded-full mb-4"
-                        data-ai-hint={testimonial.aiHint}
-                      />
-                      <p className="italic mb-4 text-foreground">"{t.items[testimonial.client].quote}"</p>
+                      <Avatar className="h-20 w-20 mb-4">
+                        <AvatarFallback className="text-2xl bg-primary/20 text-primary font-bold">
+                          {getInitials(t.items[testimonial.client].name)}
+                        </AvatarFallback>
+                      </Avatar>
+                      <p className="italic mb-4 text-foreground">&quot;{t.items[testimonial.client].quote}&quot;</p>
                       <p className="font-bold font-headline">{t.items[testimonial.client].name}</p>
                       <p className="text-sm text-muted-foreground">{t.items[testimonial.client].company}</p>
                     </CardContent>

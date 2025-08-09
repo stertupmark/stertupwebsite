@@ -15,7 +15,7 @@ const blogPostsEn: BlogPosts = {
   'tech-trends-2024': {
       title: "Top 5 Tech Trends for SMBs in 2024",
       description: "Discover the technologies that can give your business a competitive edge this year.",
-      image: "https://placehold.co/600x400.png",
+      image: "/blog-tech-trends.jpg",
       aiHint: "futuristic technology interface",
       content: `
         <p>The business landscape is constantly evolving, and technology is at the forefront of this change. For Small to Medium Businesses (SMBs), staying ahead of the curve is crucial for growth and competitiveness. Here are the top 5 tech trends you should be watching in 2024:</p>
@@ -42,7 +42,7 @@ const blogPostsEn: BlogPosts = {
   'google-workspace-tips': {
       title: "Boost Productivity with Google Workspace",
       description: "Unlock hidden features and best practices to get the most out of your Google tools.",
-      image: "https://placehold.co/600x400.png",
+      image: "/blog-google-workspace.jpg",
       aiHint: "office collaboration online",
       content: `
         <p>Google Workspace is a powerful suite of tools that can dramatically improve your team's productivity and collaboration. However, many businesses only scratch the surface of what's possible. Here are some tips to unlock its full potential:</p>
@@ -69,7 +69,7 @@ const blogPostsEn: BlogPosts = {
   'social-media-smb': {
       title: "Why Social Media is Crucial for SMBs",
       description: "Learn how a strong social media strategy can drive growth and customer loyalty.",
-      image: "https://placehold.co/600x400.png",
+      image: "/blog-social-media.jpg",
       aiHint: "social media marketing",
       content: `
         <p>In today's digital world, a strong social media presence is not just a "nice-to-have" for small and medium businesses (SMBs)—it's a necessity. It's one of the most effective ways to reach new customers, build brand loyalty, and drive sales. Here's why it's so crucial:</p>
@@ -314,7 +314,7 @@ export const translations = {
             submit: "Send Message"
         },
         address: { title: "Our Office", value: "Miami, Florida, USA" },
-        email: { title: "Email Us", value: "info@stertup.net" },
+        email: { title: "Email Us", value: "info@stertups.net" },
         phone: { title: "Call Us", value: "+1 (786) 309-8161" },
         validation: {
             name: "Name must be at least 2 characters.",
@@ -533,7 +533,7 @@ export const translations = {
             submit: "Enviar Mensaje"
         },
         address: { title: "Nuestra Oficina", value: "Miami, Florida, USA" },
-        email: { title: "Envíenos un Correo", value: "info@stertup.net" },
+        email: { title: "Envíenos un Correo", value: "info@stertups.net" },
         phone: { title: "Llámenos", value: "+1 (786) 309-8161" },
         validation: {
             name: "El nombre debe tener al menos 2 caracteres.",
