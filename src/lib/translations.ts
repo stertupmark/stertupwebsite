@@ -187,6 +187,7 @@ export const translations = {
       consulting: "Consulting",
     },
     header: {
+      home: 'Home',
       services: 'Services',
       about: 'About Us',
       blog: 'Blog',
@@ -406,6 +407,7 @@ export const translations = {
       consulting: "Consultoría",
     },
     header: {
+      home: 'Inicio',
       services: 'Servicios',
       about: 'Nosotros',
       blog: 'Blog',

@@ -21,7 +21,10 @@ export default function Header() {
   const isHomePage = pathname === '/';
 
   const navLinks = [
+    { href: '/', label: t.header.home },
+    { href: '/about', label: t.header.about },
     { href: '/services', label: t.header.services },
+    { href: '/blog', label: t.header.blog },
   ];
 
   useEffect(() => {
